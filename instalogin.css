@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     display: flex;
     flex-direction: row;
-    /* default, but explicit */
     width: 100%;
-    min-height: 100vh;
 }
 
 .left {
@@ -155,4 +163,45 @@
     margin-top: 15px;
     color: white;
     font-size: 14px;
+}
+
+.box {
+    border-top: 1px solid #3D4F5C;
+    height: 115px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.top {
+    margin-top: 15px;
+}
+
+.items {
+    margin: 4px 8px;
+    color: grey;
+    font-size: 10px;
+}
+
+.items a {
+    text-decoration: none;
+    color: grey;
+}
+
+.items a:hover {
+    text-decoration: underline;
+}
+
+.bottom {
+    margin-top: 8px;
+    /* spacing between rows */
 }
